@@ -540,7 +540,7 @@ public:
 
 	int              Group; //0-9, assigned by CTRL+Number, these kinds // also set by aimd TeamType->Group !
 	AbstractClass*   Focus; // when told to guard a unit or such; distinguish undeploy and selling
-	HouseClass*      Owner;
+	HouseClass*      Owner; //0x14c
 	CloakState       CloakState;
 	DECLARE_PROPERTY(StageClass, CloakProgress); // phase from [opaque] -> [fading] -> [transparent] , [General]CloakingStages= long
 	DECLARE_PROPERTY(CDTimerClass, CloakDelayTimer); // delay before cloaking again
